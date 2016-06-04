@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="Ca0-Po-gOH">
+            <objects>
+                <controller id="3cA-YH-5zu" customClass="InterfaceController" customModule="PizzApp_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Tamaño" textAlignment="center" id="Fbl-Mv-nm6"/>
+                        <group width="1" height="69" alignment="left" layout="vertical" id="Hjr-sm-oiF">
+                            <items>
+                                <slider width="1" alignment="center" maximum="3" steps="3" id="M8C-mp-jgm">
+                                    <color key="color" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="selectorTamano:" destination="3cA-YH-5zu" id="WgV-Ru-yI7"/>
+                                    </connections>
+                                </slider>
+                                <label width="1" height="17.5" alignment="center" verticalAlignment="center" textAlignment="center" id="KZI-Rg-5Gm"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Masa➡️" id="Ylc-oq-6O7">
+                            <connections>
+                                <action selector="elegirTamano" destination="3cA-YH-5zu" id="XbT-Yj-cXR"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="botonMasa" destination="Ylc-oq-6O7" id="cYs-qL-fWe"/>
+                        <outlet property="tamano" destination="KZI-Rg-5Gm" id="zGx-zv-coT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-67" y="337"/>
+        </scene>
+        <!--identificadorMasa-->
+        <scene sceneID="xeM-FU-k9Q">
+            <objects>
+                <controller identifier="identificadorMasa" id="vsz-Ui-paM" customClass="ViewMasa" customModule="PizzApp_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Masa" textAlignment="center" id="y5h-77-9yz"/>
+                        <group width="1" height="72.5" alignment="left" layout="vertical" id="5cY-0g-KPc">
+                            <items>
+                                <slider width="1" alignment="left" maximum="4" steps="4" id="PC4-Ip-v19">
+                                    <color key="color" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="selectorMasa:" destination="vsz-Ui-paM" id="a2E-xN-fEi"/>
+                                    </connections>
+                                </slider>
+                                <label width="1" height="20" alignment="center" verticalAlignment="center" textAlignment="center" id="DjU-lk-pFf"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Queso➡️" id="zX1-tE-Mgk">
+                            <connections>
+                                <action selector="elegirMasa" destination="vsz-Ui-paM" id="T9K-E5-xYR"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="botonQueso" destination="zX1-tE-Mgk" id="gvL-s4-iEz"/>
+                        <outlet property="masa" destination="DjU-lk-pFf" id="Jop-ei-GMV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="140" y="337"/>
+        </scene>
+        <!--identificadorQueso-->
+        <scene sceneID="NNk-Ba-G4b">
+            <objects>
+                <controller identifier="identificadorQueso" id="nHv-kF-eUX" customClass="ViewQueso" customModule="PizzApp_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Queso" textAlignment="center" id="DS3-kK-Eiw"/>
+                        <group width="136" height="57" alignment="left" layout="vertical" id="cqa-7W-1Kx">
+                            <items>
+                                <slider width="1" alignment="left" maximum="4" steps="4" id="mpe-Tv-HFU">
+                                    <color key="color" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="selectorQueso:" destination="nHv-kF-eUX" id="GJ4-9J-5pG"/>
+                                    </connections>
+                                </slider>
+                                <label width="1" height="18" alignment="left" verticalAlignment="center" textAlignment="center" id="HK1-yp-jJe"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Ingredientes➡️" id="BAb-Bm-bYa">
+                            <connections>
+                                <action selector="elegirQueso" destination="nHv-kF-eUX" id="cTi-nl-tEd"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="botonIngredientes" destination="BAb-Bm-bYa" id="dyQ-d7-Iyq"/>
+                        <outlet property="queso" destination="HK1-yp-jJe" id="1CS-D5-kON"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="341" y="337"/>
+        </scene>
+        <!--identificadorIngredientes-->
+        <scene sceneID="UD0-9C-H4d">
+            <objects>
+                <controller identifier="identificadorIngredientes" id="7MY-CQ-BLf" customClass="ViewIngredientes" customModule="PizzApp_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="1-5 Ingredientes" textAlignment="center" id="uim-8z-PR2"/>
+                        <switch width="1" alignment="left" title="Jamón" id="1qx-1u-L5w">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickJamon:" destination="7MY-CQ-BLf" id="678-ze-eOP"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pepperoni" id="6HO-Rh-HQZ">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickPepperoni:" destination="7MY-CQ-BLf" id="MZJ-ho-Utg"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pavo" id="nM6-YR-cb1">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickPavo:" destination="7MY-CQ-BLf" id="ZG9-fE-zSI"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Salchicha" id="8wl-QO-nWj">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickSalchicha:" destination="7MY-CQ-BLf" id="oNZ-rV-Tl0"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Aceitunas" id="7rV-0R-M2x">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickAceitunas:" destination="7MY-CQ-BLf" id="rsC-EO-5xP"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Cebolla" id="Jt7-Vo-M9L">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickCebolla:" destination="7MY-CQ-BLf" id="Qhf-aL-Mg2"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pimiento" id="UDf-eS-8pf">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickPimiento:" destination="7MY-CQ-BLf" id="BHz-7E-A0Z"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Piña" id="hgr-WQ-bYX">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickPina:" destination="7MY-CQ-BLf" id="zZF-Lj-hDT"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Anchoas" id="FjW-4d-F4Y">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickAnchoas:" destination="7MY-CQ-BLf" id="3iF-gc-2t7"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Salami" id="Qkd-zF-AHG">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickSalami:" destination="7MY-CQ-BLf" id="gkZ-fl-zrP"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Chorizo" id="YUc-TM-3SS">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickChorizo:" destination="7MY-CQ-BLf" id="5og-7X-ZXl"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Atún" id="SF0-eo-7oa">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickAtun:" destination="7MY-CQ-BLf" id="6kg-CA-LOA"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pollo" id="WID-Kg-AlX">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickPollo:" destination="7MY-CQ-BLf" id="yQC-6J-8Ne"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Lechuga" id="sbV-6U-hT7">
+                            <color key="tintColor" red="1" green="0.55301545429999999" blue="0.14111782340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="pickLechuga:" destination="7MY-CQ-BLf" id="Rs1-xR-8b8"/>
+                            </connections>
+                        </switch>
+                        <separator alignment="left" id="7uy-dQ-oUu">
+                            <color key="color" red="1" green="0.99637917060000003" blue="0.21933395929999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" height="158" alignment="left" layout="vertical" id="NmX-Hs-9c2">
+                            <items>
+                                <label width="1" height="111.5" alignment="center" textAlignment="center" numberOfLines="6" id="xpk-AK-8n5"/>
+                                <separator alignment="left" id="stn-rY-gGK">
+                                    <color key="color" red="1" green="0.99637917060000003" blue="0.21933395929999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <button width="1" alignment="left" verticalAlignment="bottom" title="Confirmar" enabled="NO" id="FdV-I3-ZpE">
+                                    <connections>
+                                        <action selector="elegirIngredientes" destination="7MY-CQ-BLf" id="tN4-OO-R4m"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="botonConfirmar" destination="FdV-I3-ZpE" id="cPV-UD-155"/>
+                        <outlet property="mensaje" destination="xpk-AK-8n5" id="Mf1-k9-ChO"/>
+                        <outlet property="myAceitunas" destination="7rV-0R-M2x" id="cvc-kE-XcH"/>
+                        <outlet property="myAnchoas" destination="FjW-4d-F4Y" id="Mj9-bH-G0h"/>
+                        <outlet property="myAtun" destination="SF0-eo-7oa" id="97Z-2c-BUf"/>
+                        <outlet property="myCebolla" destination="Jt7-Vo-M9L" id="GNg-js-UxC"/>
+                        <outlet property="myChorizo" destination="YUc-TM-3SS" id="2Gq-fn-GUs"/>
+                        <outlet property="myJamon" destination="1qx-1u-L5w" id="9wz-V9-qtK"/>
+                        <outlet property="myLechuga" destination="sbV-6U-hT7" id="Ri9-KG-58l"/>
+                        <outlet property="myPavo" destination="nM6-YR-cb1" id="uUl-Y5-rki"/>
+                        <outlet property="myPepperoni" destination="6HO-Rh-HQZ" id="jUz-ju-s6e"/>
+                        <outlet property="myPimiento" destination="UDf-eS-8pf" id="izj-f6-Ycl"/>
+                        <outlet property="myPiña" destination="hgr-WQ-bYX" id="LYE-UW-p5n"/>
+                        <outlet property="myPollo" destination="WID-Kg-AlX" id="e4R-My-Yuo"/>
+                        <outlet property="mySalami" destination="Qkd-zF-AHG" id="0IY-CB-ZnD"/>
+                        <outlet property="mySalchicha" destination="8wl-QO-nWj" id="vGY-VX-zW2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="548" y="385.5"/>
+        </scene>
+        <!--identificadorConf-->
+        <scene sceneID="w9R-n3-arD">
+            <objects>
+                <controller identifier="identificadorConf" id="nTQ-69-TmD" customClass="ViewConf" customModule="PizzApp_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Tu orden" textAlignment="center" id="Ke8-7F-g2E"/>
+                        <separator alignment="left" id="e6f-Xw-zJW">
+                            <color key="color" red="1" green="0.99637917060000003" blue="0.21933395929999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" textAlignment="left" id="m90-gN-TVK"/>
+                        <label width="1" alignment="left" textAlignment="left" id="HnW-Az-wSz"/>
+                        <label width="1" alignment="left" textAlignment="left" id="DIJ-tc-ma6"/>
+                        <separator width="102" alignment="center" id="CgT-YN-acW">
+                            <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label width="108" alignment="center" textAlignment="center" numberOfLines="5" id="DMw-V2-9GS"/>
+                        <separator alignment="left" id="svI-uz-QEg">
+                            <color key="color" red="1" green="0.99637917060000003" blue="0.21933395929999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Finalizar" id="A6U-lL-5Yv">
+                            <connections>
+                                <segue destination="ksp-oH-xIl" kind="push" id="wCX-xt-DJa"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="botonFinalizar" destination="A6U-lL-5Yv" id="3Da-ej-fje"/>
+                        <outlet property="lblIngredientes" destination="DMw-V2-9GS" id="s3M-0w-mGg"/>
+                        <outlet property="lblMasa" destination="HnW-Az-wSz" id="PJ6-n0-w8f"/>
+                        <outlet property="lblQueso" destination="DIJ-tc-ma6" id="RJe-Su-hCw"/>
+                        <outlet property="lblTamano" destination="m90-gN-TVK" id="G3B-3e-ywI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="755" y="337"/>
+        </scene>
+        <!--identificadorFinalizar-->
+        <scene sceneID="Ref-gF-dYF">
+            <objects>
+                <controller identifier="identificadorFinalizar" id="ksp-oH-xIl">
+                    <items>
+                        <label width="1" alignment="left" text="Orden confirmada" textAlignment="center" numberOfLines="2" id="pqn-mj-tnX"/>
+                        <separator alignment="left" id="3Go-cS-NjZ">
+                            <color key="color" red="1" green="0.99637917060000003" blue="0.21933395929999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <button width="121" height="121" alignment="center" verticalAlignment="bottom" title="INICIO" backgroundImage="logo" id="Ysu-qI-eqq">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                            <connections>
+                                <segue destination="3cA-YH-5zu" kind="push" id="vdi-h5-PRv"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1015" y="337"/>
+        </scene>
+    </scenes>
+</document>

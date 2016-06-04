@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB67F38D1D00F12800787156 /* ViewIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB67F38C1D00F12800787156 /* ViewIngredientes.swift */; };
+		FB67F38F1D00F13800787156 /* ViewConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB67F38E1D00F13800787156 /* ViewConf.swift */; };
+		FBE5726E1CFF7C59008828D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5726D1CFF7C59008828D9 /* AppDelegate.swift */; };
+		FBE572701CFF7C59008828D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5726F1CFF7C59008828D9 /* ViewController.swift */; };
+		FBE572731CFF7C59008828D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE572711CFF7C59008828D9 /* Main.storyboard */; };
+		FBE572751CFF7C59008828D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE572741CFF7C59008828D9 /* Assets.xcassets */; };
+		FBE572781CFF7C59008828D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE572761CFF7C59008828D9 /* LaunchScreen.storyboard */; };
+		FBE5727D1CFF7C59008828D9 /* PizzApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBE5727C1CFF7C59008828D9 /* PizzApp WatchKit App.app */; };
+		FBE572831CFF7C59008828D9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE572811CFF7C59008828D9 /* Interface.storyboard */; };
+		FBE572851CFF7C59008828D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE572841CFF7C59008828D9 /* Assets.xcassets */; };
+		FBE5728C1CFF7C5A008828D9 /* PizzApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBE5728B1CFF7C5A008828D9 /* PizzApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBE572911CFF7C5A008828D9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE572901CFF7C5A008828D9 /* InterfaceController.swift */; };
+		FBE572931CFF7C5A008828D9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE572921CFF7C5A008828D9 /* ExtensionDelegate.swift */; };
+		FBE572951CFF7C5A008828D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE572941CFF7C5A008828D9 /* Assets.xcassets */; };
+		FBE572A71CFF8827008828D9 /* Valor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE572A61CFF8827008828D9 /* Valor.swift */; };
+		FBE572AB1CFF8AD3008828D9 /* ViewMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE572AA1CFF8AD3008828D9 /* ViewMasa.swift */; };
+		FBE572AD1CFF8B0B008828D9 /* ViewQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE572AC1CFF8B0B008828D9 /* ViewQueso.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBE5727E1CFF7C59008828D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBE572621CFF7C59008828D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE5727B1CFF7C59008828D9;
+			remoteInfo = "PizzApp WatchKit App";
+		};
+		FBE5728D1CFF7C5A008828D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBE572621CFF7C59008828D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE5728A1CFF7C5A008828D9;
+			remoteInfo = "PizzApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBE5729C1CFF7C5A008828D9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBE5728C1CFF7C5A008828D9 /* PizzApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE572A01CFF7C5A008828D9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FBE5727D1CFF7C59008828D9 /* PizzApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB67F38C1D00F12800787156 /* ViewIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIngredientes.swift; sourceTree = "<group>"; };
+		FB67F38E1D00F13800787156 /* ViewConf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConf.swift; sourceTree = "<group>"; };
+		FBE5726A1CFF7C59008828D9 /* PizzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE5726D1CFF7C59008828D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBE5726F1CFF7C59008828D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBE572721CFF7C59008828D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBE572741CFF7C59008828D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBE572771CFF7C59008828D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBE572791CFF7C59008828D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE5727C1CFF7C59008828D9 /* PizzApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PizzApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE572821CFF7C59008828D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FBE572841CFF7C59008828D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBE572861CFF7C59008828D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE5728B1CFF7C5A008828D9 /* PizzApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PizzApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE572901CFF7C5A008828D9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FBE572921CFF7C5A008828D9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FBE572941CFF7C5A008828D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBE572961CFF7C5A008828D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE572A61CFF8827008828D9 /* Valor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Valor.swift; sourceTree = "<group>"; };
+		FBE572AA1CFF8AD3008828D9 /* ViewMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMasa.swift; sourceTree = "<group>"; };
+		FBE572AC1CFF8B0B008828D9 /* ViewQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewQueso.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBE572671CFF7C59008828D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE572881CFF7C5A008828D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBE572611CFF7C59008828D9 = {
+			isa = PBXGroup;
+			children = (
+				FBE5726C1CFF7C59008828D9 /* PizzApp */,
+				FBE572801CFF7C59008828D9 /* PizzApp WatchKit App */,
+				FBE5728F1CFF7C5A008828D9 /* PizzApp WatchKit Extension */,
+				FBE5726B1CFF7C59008828D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBE5726B1CFF7C59008828D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBE5726A1CFF7C59008828D9 /* PizzApp.app */,
+				FBE5727C1CFF7C59008828D9 /* PizzApp WatchKit App.app */,
+				FBE5728B1CFF7C5A008828D9 /* PizzApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBE5726C1CFF7C59008828D9 /* PizzApp */ = {
+			isa = PBXGroup;
+			children = (
+				FBE5726D1CFF7C59008828D9 /* AppDelegate.swift */,
+				FBE5726F1CFF7C59008828D9 /* ViewController.swift */,
+				FBE572711CFF7C59008828D9 /* Main.storyboard */,
+				FBE572741CFF7C59008828D9 /* Assets.xcassets */,
+				FBE572761CFF7C59008828D9 /* LaunchScreen.storyboard */,
+				FBE572791CFF7C59008828D9 /* Info.plist */,
+			);
+			path = PizzApp;
+			sourceTree = "<group>";
+		};
+		FBE572801CFF7C59008828D9 /* PizzApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FBE572811CFF7C59008828D9 /* Interface.storyboard */,
+				FBE572841CFF7C59008828D9 /* Assets.xcassets */,
+				FBE572861CFF7C59008828D9 /* Info.plist */,
+			);
+			path = "PizzApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		FBE5728F1CFF7C5A008828D9 /* PizzApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBE572901CFF7C5A008828D9 /* InterfaceController.swift */,
+				FBE572921CFF7C5A008828D9 /* ExtensionDelegate.swift */,
+				FBE572941CFF7C5A008828D9 /* Assets.xcassets */,
+				FBE572961CFF7C5A008828D9 /* Info.plist */,
+				FBE572A61CFF8827008828D9 /* Valor.swift */,
+				FBE572AA1CFF8AD3008828D9 /* ViewMasa.swift */,
+				FBE572AC1CFF8B0B008828D9 /* ViewQueso.swift */,
+				FB67F38C1D00F12800787156 /* ViewIngredientes.swift */,
+				FB67F38E1D00F13800787156 /* ViewConf.swift */,
+			);
+			path = "PizzApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBE572691CFF7C59008828D9 /* PizzApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE572A11CFF7C5A008828D9 /* Build configuration list for PBXNativeTarget "PizzApp" */;
+			buildPhases = (
+				FBE572661CFF7C59008828D9 /* Sources */,
+				FBE572671CFF7C59008828D9 /* Frameworks */,
+				FBE572681CFF7C59008828D9 /* Resources */,
+				FBE572A01CFF7C5A008828D9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBE5727F1CFF7C59008828D9 /* PBXTargetDependency */,
+			);
+			name = PizzApp;
+			productName = PizzApp;
+			productReference = FBE5726A1CFF7C59008828D9 /* PizzApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBE5727B1CFF7C59008828D9 /* PizzApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE5729D1CFF7C5A008828D9 /* Build configuration list for PBXNativeTarget "PizzApp WatchKit App" */;
+			buildPhases = (
+				FBE5727A1CFF7C59008828D9 /* Resources */,
+				FBE5729C1CFF7C5A008828D9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBE5728E1CFF7C5A008828D9 /* PBXTargetDependency */,
+			);
+			name = "PizzApp WatchKit App";
+			productName = "PizzApp WatchKit App";
+			productReference = FBE5727C1CFF7C59008828D9 /* PizzApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FBE5728A1CFF7C5A008828D9 /* PizzApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE572991CFF7C5A008828D9 /* Build configuration list for PBXNativeTarget "PizzApp WatchKit Extension" */;
+			buildPhases = (
+				FBE572871CFF7C5A008828D9 /* Sources */,
+				FBE572881CFF7C5A008828D9 /* Frameworks */,
+				FBE572891CFF7C5A008828D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PizzApp WatchKit Extension";
+			productName = "PizzApp WatchKit Extension";
+			productReference = FBE5728B1CFF7C5A008828D9 /* PizzApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBE572621CFF7C59008828D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Gerardo Silva";
+				TargetAttributes = {
+					FBE572691CFF7C59008828D9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QCZTAR6NWV;
+					};
+					FBE5727B1CFF7C59008828D9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QCZTAR6NWV;
+					};
+					FBE5728A1CFF7C5A008828D9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QCZTAR6NWV;
+					};
+				};
+			};
+			buildConfigurationList = FBE572651CFF7C59008828D9 /* Build configuration list for PBXProject "PizzApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBE572611CFF7C59008828D9;
+			productRefGroup = FBE5726B1CFF7C59008828D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBE572691CFF7C59008828D9 /* PizzApp */,
+				FBE5727B1CFF7C59008828D9 /* PizzApp WatchKit App */,
+				FBE5728A1CFF7C5A008828D9 /* PizzApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBE572681CFF7C59008828D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE572781CFF7C59008828D9 /* LaunchScreen.storyboard in Resources */,
+				FBE572751CFF7C59008828D9 /* Assets.xcassets in Resources */,
+				FBE572731CFF7C59008828D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE5727A1CFF7C59008828D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE572851CFF7C59008828D9 /* Assets.xcassets in Resources */,
+				FBE572831CFF7C59008828D9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE572891CFF7C5A008828D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE572951CFF7C5A008828D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBE572661CFF7C59008828D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE572701CFF7C59008828D9 /* ViewController.swift in Sources */,
+				FBE5726E1CFF7C59008828D9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE572871CFF7C5A008828D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE572931CFF7C5A008828D9 /* ExtensionDelegate.swift in Sources */,
+				FB67F38F1D00F13800787156 /* ViewConf.swift in Sources */,
+				FB67F38D1D00F12800787156 /* ViewIngredientes.swift in Sources */,
+				FBE572A71CFF8827008828D9 /* Valor.swift in Sources */,
+				FBE572AB1CFF8AD3008828D9 /* ViewMasa.swift in Sources */,
+				FBE572911CFF7C5A008828D9 /* InterfaceController.swift in Sources */,
+				FBE572AD1CFF8B0B008828D9 /* ViewQueso.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBE5727F1CFF7C59008828D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE5727B1CFF7C59008828D9 /* PizzApp WatchKit App */;
+			targetProxy = FBE5727E1CFF7C59008828D9 /* PBXContainerItemProxy */;
+		};
+		FBE5728E1CFF7C5A008828D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE5728A1CFF7C5A008828D9 /* PizzApp WatchKit Extension */;
+			targetProxy = FBE5728D1CFF7C5A008828D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBE572711CFF7C59008828D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE572721CFF7C59008828D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBE572761CFF7C59008828D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE572771CFF7C59008828D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FBE572811CFF7C59008828D9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE572821CFF7C59008828D9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBE572971CFF7C5A008828D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBE572981CFF7C5A008828D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBE5729A1CFF7C5A008828D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PizzApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.PizzApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		FBE5729B1CFF7C5A008828D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PizzApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.PizzApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		FBE5729E1CFF7C5A008828D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PizzApp_WatchKit_Extension;
+				INFOPLIST_FILE = "PizzApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.PizzApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		FBE5729F1CFF7C5A008828D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PizzApp_WatchKit_Extension;
+				INFOPLIST_FILE = "PizzApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.PizzApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		FBE572A21CFF7C5A008828D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PizzApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.PizzApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBE572A31CFF7C5A008828D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PizzApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.PizzApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBE572651CFF7C59008828D9 /* Build configuration list for PBXProject "PizzApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE572971CFF7C5A008828D9 /* Debug */,
+				FBE572981CFF7C5A008828D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE572991CFF7C5A008828D9 /* Build configuration list for PBXNativeTarget "PizzApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE5729A1CFF7C5A008828D9 /* Debug */,
+				FBE5729B1CFF7C5A008828D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE5729D1CFF7C5A008828D9 /* Build configuration list for PBXNativeTarget "PizzApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE5729E1CFF7C5A008828D9 /* Debug */,
+				FBE5729F1CFF7C5A008828D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE572A11CFF7C5A008828D9 /* Build configuration list for PBXNativeTarget "PizzApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE572A21CFF7C5A008828D9 /* Debug */,
+				FBE572A31CFF7C5A008828D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBE572621CFF7C59008828D9 /* Project object */;
+}
